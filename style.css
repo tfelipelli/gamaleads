@@ -79,11 +79,16 @@ h6{
 }
 
 /* menu-topo */
+
 #banner{
-	height: 90px;
+  text-align: justify;
+  background-image: url("https://unsplash.it/1300/600?random");
+  background-size: cover;
+  padding: 150px;
+
+/*	height: 90px; */
 	background-color: transparent;
 	color: black;
-	font-size: 18px;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 33px;
