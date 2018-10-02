@@ -1,13 +1,19 @@
 function getlead() {
-  var leadID = document.getElementById("form_id").value;
+  var userId = document.getElementById("form_id").value;
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
   var database = firebase.database();
 
   if (validatelead()) // Calling validation function
   {
-    storelead(leadID,name,email);
-    document.getElementById("form_id").submit();
+    if (storelead())
+    {
+      document.getElementById("form_id").action = "success.php";
+      document.getElementById("form_id").submit();
+    }
+    else {
+      alert("Dados não armazenados!")
+    }
   }
 }
 
@@ -22,15 +28,19 @@ function validatelead() {
     alert("E-mail inválido!");
     return false;
   } else {
-    alert("Sucesso!")
     return true;
   }
 }
 
-function storelead(userId, name, email) {
+function storelead() {
+  var userId = document.getElementById("form_id").value;
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var database = firebase.database();
 
   firebase.database().ref('users/' + userId).set({
     username: name,
     email: email,
   });
+  return true;
 }

@@ -16,7 +16,7 @@
       firebase.initializeApp(config);
     </script>
 
-    <script src="getlead.js"></script>
+    <script src="set_action.js"></script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -225,7 +225,7 @@
 
         <div class="container">
           <div class="main">
-            <form id="form_id" method="get" name="dataform">
+            <form id="form_id" method="post" name="dataform">
               <input type="text" id="name" name="name" placeholder="Seu nome completo">
               <input type="text" id="email" name="email" placeholder="Seu melhor e-mail">
               <input onclick="getlead()" type="button" value="Baixar material">
