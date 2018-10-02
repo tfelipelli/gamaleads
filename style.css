@@ -1,50 +1,58 @@
-body {
+body{
+	background: rgb(245,245,245);
+	color: blue;
+	font-size: 25px;
 	font-family: 'Montserrat', sans-serif;
 }
 
-p {
+p{
 	font-weight: normal;
 	line-height: 44px;
 	font-size: 18px;
 	color: #262626;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* titulo-grande */
-h1 {
+h1{
 	font-weight: bold;
 	line-height: 84px;
 	font-size: 48px;
 	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* titulo-caixa-alta */
-h2 {
+h2{
 		font-weight: 600;
 		line-height: 66px;
 		font-size: 36px;
 		color: #262626;
 		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
 }
 
 /* titulo-medio */
-h3 {
+h3{
 		font-weight: 600;
 		line-height: 66px;
 		font-size: 36px;
 		color: #262626;
+		font-family: 'Montserrat', sans-serif;
 }
 
 /* subtitulo */
-h4 {
+h4{
 	font-style: normal;
 	font-weight: 500;
 	line-height: 44px;
 	font-size: 24px;
 	color: #262626;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* input-medio */
-h5 {
+h5{
 	width: 265px;
 	height: 45px;
 	background: #FFFFFF;
@@ -54,9 +62,11 @@ h5 {
 	line-height: normal;
 	font-size: 16px;
 	color: #262626;
+	font-family: 'Montserrat', sans-serif;
 }
+
  /* input-mini */
-h6 {
+h6{
 	width: 182px;
 	height: 34px;
 	background: #F2F2F3;
@@ -65,10 +75,11 @@ h6 {
 	line-height: 33px;
 	font-size: 18px;
 	color: #C4C4C4;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* menu-topo */
-#banner {
+#banner{
 	height: 90px;
 	background-color: transparent;
 	color: black;
@@ -78,18 +89,20 @@ h6 {
 	line-height: 33px;
 	font-size: 18px;
 	color: #262626;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* paragrafo-grande */
-#banner p {
+#banner p{
 	font-weight: normal;
 	line-height: 44px;
 	font-size: 24px;
 	color: #262626;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* botao-medio */
-button {
+button{
 	width: 265px;
 	height: 45px;
 	border: 2px solid #FFFFFF;
@@ -103,7 +116,7 @@ button {
 }
 
 /* botao-mini */
-#mini {
+#mini{
 	width: 135px;
 	height: 40px;
 	background: #008BA4;
@@ -116,14 +129,14 @@ button {
 	padding: 8px 16px;
 }
 
-#card {
+.card{
 	width: 355px;
 	height: 425px;
 	border-radius: 10px;
 }
 
 /* titulo-card */
-#hcard {
+#hcard{
 	font-weight: bold;
 	line-height: 25px;
 	font-size: 24px;
