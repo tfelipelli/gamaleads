@@ -1,172 +1,104 @@
-body{
-	background: rgb(245,245,245);
-	color: blue;
-	font-size: 25px;
-	font-family: 'Montserrat', sans-serif;
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
 }
 
-p{
-	font-weight: normal;
-	line-height: 44px;
-	font-size: 18px;
-	color: #262626;
-	font-family: 'Montserrat', sans-serif;
-}
-
-/* titulo-grande */
-h1{
-	font-weight: bold;
-	line-height: 84px;
-	font-size: 48px;
-	color: #FFFFFF;
-	font-family: 'Montserrat', sans-serif;
-}
-
-/* titulo-caixa-alta */
-h2{
-		font-weight: 600;
-		line-height: 66px;
-		font-size: 36px;
-		color: #262626;
-		text-transform: uppercase;
-		font-family: 'Montserrat', sans-serif;
-}
-
-/* titulo-medio */
-h3{
-		font-weight: 600;
-		line-height: 66px;
-		font-size: 36px;
-		color: #262626;
-		font-family: 'Montserrat', sans-serif;
-}
-
-/* subtitulo */
-h4{
-	font-style: normal;
-	font-weight: 500;
-	line-height: 44px;
-	font-size: 24px;
-	color: #262626;
-	font-family: 'Montserrat', sans-serif;
-}
-
-/* input-medio */
-h5{
-	width: 265px;
-	height: 45px;
-	background: #FFFFFF;
-	border-radius: 5px;
-	font-style: normal;
-	font-weight: normal;
-	line-height: normal;
-	font-size: 16px;
-	color: #262626;
-	font-family: 'Montserrat', sans-serif;
-}
-
- /* input-mini */
-h6{
-	width: 182px;
-	height: 34px;
-	background: #F2F2F3;
-	border-radius: 7px;
-	font-weight: normal;
-	line-height: 33px;
-	font-size: 18px;
-	color: #C4C4C4;
-	font-family: 'Montserrat', sans-serif;
-}
-
-/* menu-topo */
-
-#banner{
-  text-align: justify;
-  background-size: cover;
-  padding: 150px;
-
-/*	height: 90px; */
-	background-color: transparent;
-	color: black;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 33px;
-	font-size: 18px;
-	color: #262626;
-	font-family: 'Montserrat', sans-serif;
-}
-
-/* paragrafo-grande */
-#banner p{
-	font-weight: normal;
-	line-height: 44px;
-	font-size: 24px;
-	color: #262626;
-	font-family: 'Montserrat', sans-serif;
-}
-
-/* botao-medio */
-button{
-	width: 265px;
-	height: 45px;
-	border: 2px solid #FFFFFF;
-	box-sizing: border-box;
-	border-radius: 5px;
-	font-weight: bold;
-	line-height: 32px;
-	font-size: 18px;
-	color: #F2F2F3;
-	padding: 8px 16px;
-}
-
-/* botao-mini */
-#mini{
-	width: 135px;
-	height: 40px;
-	background: #008BA4;
-	border-radius: 5px;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 28px;
-	font-size: 16px;
-	color: #FFFFFF;
-	padding: 8px 16px;
-}
-
-.card{
-	width: 355px;
-	height: 425px;
-	border-radius: 10px;
-}
-
-/* titulo-card */
-#hcard{
-	font-weight: bold;
-	line-height: 25px;
-	font-size: 24px;
-	font-variant: small-caps;
-	color: #F2F2F3;
-	text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
-}
-
-/* categoria-card */
-#catcard {
-	font-weight: 500;
-	line-height: 33px;
-	font-size: 18px;
-	color: #F2F2F3;
-	text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
-}
-
-.container{
-  border: 2px solid black;
-/*  display: flex;  */
-}
-
-.container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
   text-align: center;
-  line-height: 75px;
-  font-size: 15px;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
 }
