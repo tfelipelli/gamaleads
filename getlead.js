@@ -1,14 +1,17 @@
-function myfunction() {
+function getlead() {
+  var leadID = document.getElementById("form_id").value;
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
-  if (validation()) // Calling validation function
+  var database = firebase.database();
+
+  if (validatelead()) // Calling validation function
   {
-    document.getElementById("form_id").action = "getlead.php";
+    storelead(leadID,name,email);
     document.getElementById("form_id").submit();
   }
 }
 
-function validation() {
+function validatelead() {
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
   var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
@@ -22,4 +25,12 @@ function validation() {
     alert("Sucesso!")
     return true;
   }
+}
+
+function storelead(userId, name, email) {
+
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+  });
 }

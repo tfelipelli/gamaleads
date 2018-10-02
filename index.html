@@ -1,9 +1,23 @@
 <html>
   <head>
-
     <title>econtAgil</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDP637DPuIeUoGHXtNdZsl5cnEf7IzWaS0",
+        authDomain: "gamaleads-899c1.firebaseapp.com",
+        databaseURL: "https://gamaleads-899c1.firebaseio.com",
+        projectId: "gamaleads-899c1",
+        storageBucket: "gamaleads-899c1.appspot.com",
+        messagingSenderId: "456553398482"
+      };
+      firebase.initializeApp(config);
+    </script>
+
     <script src="getlead.js"></script>
-    
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -147,41 +161,35 @@
           <h5>por Thais Fernandes</h5>
           <p>
             A implementação do <b>eSocial</b> ainda está em andamento e não tem data para acabar.
-            Quer ficar por dentro dos prazos que ainda estão por vencer?
-            <br>
-            Veja as informações abaixo:
-            <br>
+            Quer ficar por dentro dos prazos que ainda estão por vencer?<br>
+            Veja as informações abaixo:<br>
             <b>ETAPA 1 – Empresas com faturamento anual superior a R$78 milhões</b><br>
-            Fase 5 - Janeiro/19: Na última fase, deverão ser enviados os dados de segurança e saúde do trabalhador
-            <br>
+            Fase 5 - Janeiro/19: Na última fase, deverão ser enviados os dados de segurança e saúde do trabalhador<br>
             <b>ETAPA 2 – Empresas privadas com faturamento anual inferior a R$78 milhões</b><br>
             Fase 2 - Outubro/18: Empresas passam a ser obrigadas a enviar informações relativas aos trabalhadores
             e seus vínculos com as empresas como admissões, afastamentos e desligamentos (eventos não periódicos)<br>
             Fase 3 - Novembro/18: Torna-se obrigatório o envio das <b>folhas de pagamento</b><br>
             Fase 4 - Janeiro/19: Substituição da <b>GFIP</b> e compensação cruzada <br>
             Fase 5 - Janeiro/19 (Última fase): Deverão ser enviados os dados de segurança e saúde do trabalhador<br>
-            <br>
-            <b>ETAPA 2.1 – Empresas com faturamento anual até R$4,8 milhões (inclusive Simples Nacional e MEIs com empregado)
-            </b>
+            <b>ETAPA 2.1 – Empresas com faturamento anual até R$4,8 milhões (inclusive Simples Nacional e MEIs com empregado)</b><br>
             Fase 1 - Novembro/18: Apenas informações sobre a empresa (cadastros do empregador e tabelas)<br>
             Fase 2 - Novembro/18: Empresas passam a ser obrigadas a enviar informações relativas aos trabalhadores
             e seus vínculos com as empresas como admissões, afastamentos e desligamentos (eventos não periódicos)<br>
             Fase 3 - Novembro/18: Torna-se obrigatório o envio das <b>folhas de pagamento</b><br>
             Fase 4 - Janeiro/19: Substituição da <b>GFIP</b> e compensação cruzada<br>
             Fase 5 - Janeiro/19 (Última fase): Deverão ser enviados os dados de segurança e saúde do trabalhador<br>
-            <br><br>
-            <b>Quais benefícios o eSocial vai trazer?</b>
             <br>
+            <b>Quais benefícios o eSocial vai trazer?</b><br>
             O eSocial vai ajudar a simplificar a vida dos profissionais de contabilidade.
             O Sistema Público de Escrituração Digital (<b>SPED</b>) possibilitou sintetizar as informações em um só sistema.
             Portanto, o eSocial é como uma versão do SPED para a área trabalhista.
-            <br><br>
+            <br>
             Além da folha de pagamento, são pelo menos 14 os itens compreendidos dentro do eSocial.
             Tudo que era enviado individualmente passará a ser entregue de uma só vez.
             <br>
           </p>
             <img src="images/esocial.png" alt="Nature" class="responsive">
-          <p>
+          <p><br>
             Veja a lista desses itens abaixo:
             <br>
             •	Cadastro Geral de Empregados e Desempregados (CAGED)<br>
@@ -198,7 +206,7 @@
             •	Manual Normativo de Arquivos Digitais (MANAD)<br>
             •	Guia da Previdência Social (GPS)<br>
             •	Guia de Recolhimento do FGTS (GRF)<br>
-            <br><br>
+            <br>
             Além de facilitar a vida dos contadores, o eSocial também amplia a capacidade de fiscalização do Estado.
             <br>
             Para as empresas, será necessário mais cuidado com normas trabalhistas, previdenciárias,
@@ -217,10 +225,10 @@
 
         <div class="container">
           <div class="main">
-            <form id="form_id" method="post" name="myform">
+            <form id="form_id" method="get" name="dataform">
               <input type="text" id="name" name="name" placeholder="Seu nome completo">
               <input type="text" id="email" name="email" placeholder="Seu melhor e-mail">
-              <input onclick="myfunction()" type="button" value="Baixar material">
+              <input onclick="getlead()" type="button" value="Baixar material">
             </form>
           </div>
 
@@ -248,7 +256,6 @@
         </div>
       </div>
     </div>
-
 
     <div class="footer">
       <h2>Footer</h2>
