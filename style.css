@@ -1,63 +1,135 @@
-/* style.css */
-body{
-  background: rgb(245,245,245);
-  color: blue;
-  font-size: 25px;
-  font-family: 'Pangolin', cursive;
-}
-h1{
-  color: red;
-  font-weight: lighter;
-  font-size: 18px;
-  font-family: 'Pangolin', cursive;
-}
-h2 {
-  color: red;
-  font-weight: lighter;
-  font-size: 10px;
-  font-family: 'Pangolin', cursive;
-}
-a {
-  color: red;
-}
-a:hover {
-  text-decoration: none;
-  color: purple;
+.body {
+	font-family: 'Montserrat', sans-serif;
 }
 
-#banner{
-  text-align: center;
-  background-image: url("https://unsplash.it/1300/600?random");
-  background-size: cover;
-  padding: 150px;
-  color: white;
-  text-shadow: 1px 1px 5px black;
-}
-#banner h1 {
-  color: white;
-  font-size: 50px;
-}
-#banner p {
-  color: white;
-  opacity: 0.8;
-  font-size: 30px;
-  font-weight: lighter;
-}
-#footer{
-  padding: 30px;
-  background: rgb(30, 30, 30);
-  color: lightgrey;
+.menu-topo {
+	height: 90px;
+	background-color: transparent;
+	color: black;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 33px;
+	font-size: 18px;
+	color: #262626;
 }
 
-#footer a {
-  color: lightgrey;
-  font-size: 15px;
-}
-#footer a:hover {
-  color: white;
+.titulo-medio {
+	font-weight: 600;
+	line-height: 66px;
+	font-size: 36px;
+	color: #262626;
 }
 
-.card{
-  padding: 50px;
-  font-weight: lighter;
+.titulo-grande {
+	font-weight: bold;
+	line-height: 84px;
+	font-size: 48px;
+	color: #FFFFFF;
+
+.titulo-caixa-alta {
+	font-weight: 600;
+	line-height: 66px;
+	font-size: 36px;
+	color: #262626;
+	text-transform: uppercase;
 }
+
+.paragrafo-grande {
+	font-weight: normal;
+	line-height: 44px;
+	font-size: 24px;
+	color: #262626;
+}
+
+.paragrafo-padrao {
+	font-weight: normal;
+	line-height: 44px;
+	font-size: 18px;
+	color: #262626;
+}
+
+.subtitulo {
+	font-style: normal;
+	font-weight: 500;
+	line-height: 44px;
+	font-size: 24px;
+	color: #262626;
+}
+
+.input-medio {
+	width: 265px;
+	height: 45px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 16px;
+	color: #262626;
+}
+
+.input-mini {
+	width: 182px;
+	height: 34px;
+	background: #F2F2F3;
+	border-radius: 7px;
+	font-weight: normal;
+	line-height: 33px;
+	font-size: 18px;
+	color: #C4C4C4;
+}
+
+
+.botao-mini {
+	width: 135px;
+	height: 40px;
+	background: #008BA4;
+	border-radius: 5px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 28px;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding: 8px 16px;
+}
+
+
+.botao-medio {
+	width: 265px;
+	height: 45px;
+	border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-weight: bold;
+	line-height: 32px;
+	font-size: 18px;
+	color: #F2F2F3;
+	padding: 8px 16px;
+}
+
+.card-padrao {
+	width: 355px;
+	height: 425px;
+	border-radius: 10px;
+}
+
+.titulo-card {
+	font-weight: bold;
+	line-height: 25px;
+	font-size: 24px;
+	font-variant: small-caps;
+	color: #F2F2F3;
+	text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.categoria-card {
+	font-weight: 500;
+	line-height: 33px;
+	font-size: 18px;
+	color: #F2F2F3;
+	text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+
