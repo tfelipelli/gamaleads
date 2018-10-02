@@ -1,8 +1,8 @@
-.body {
+body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.p {
+p {
 	font-weight: normal;
 	line-height: 44px;
 	font-size: 18px;
@@ -10,7 +10,7 @@
 }
 
 /* titulo-grande */
-.h1 {
+h1 {
 	font-weight: bold;
 	line-height: 84px;
 	font-size: 48px;
@@ -18,7 +18,7 @@
 }
 
 /* titulo-caixa-alta */
-.h2 {
+h2 {
 		font-weight: 600;
 		line-height: 66px;
 		font-size: 36px;
@@ -27,7 +27,7 @@
 }
 
 /* titulo-medio */
-.h3 {
+h3 {
 		font-weight: 600;
 		line-height: 66px;
 		font-size: 36px;
@@ -35,7 +35,7 @@
 }
 
 /* subtitulo */
-.h4 {
+h4 {
 	font-style: normal;
 	font-weight: 500;
 	line-height: 44px;
@@ -44,7 +44,7 @@
 }
 
 /* input-medio */
-.h5 {
+h5 {
 	width: 265px;
 	height: 45px;
 	background: #FFFFFF;
@@ -56,7 +56,7 @@
 	color: #262626;
 }
  /* input-mini */
-.h6 {
+h6 {
 	width: 182px;
 	height: 34px;
 	background: #F2F2F3;
@@ -89,7 +89,7 @@
 }
 
 /* botao-medio */
-.button {
+button {
 	width: 265px;
 	height: 45px;
 	border: 2px solid #FFFFFF;
@@ -116,7 +116,7 @@
 	padding: 8px 16px;
 }
 
-.card {
+#card {
 	width: 355px;
 	height: 425px;
 	border-radius: 10px;
