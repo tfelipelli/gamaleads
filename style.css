@@ -158,3 +158,16 @@ button{
 	color: #F2F2F3;
 	text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
 }
+
+.container{
+  border: 2px solid black;
+/*  display: flex;  */
+}
+
+.container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 15px;
+}
