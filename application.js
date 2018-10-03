@@ -1,3 +1,34 @@
+function getIp(callback) {
+  function response(s) {
+    callback(window.userip);
+
+    s.onload = s.onerror = null;
+    document.body.removeChild(s);
+  }
+
+  function trigger() {
+    window.userip = false;
+
+    var s = document.createElement("script");
+    s.async = true;
+    s.onload = function() {
+      response(s);
+    };
+    s.onerror = function() {
+      response(s);
+    };
+
+    s.src = "https://l2.io/ip.js?var=userip";
+    document.body.appendChild(s);
+  }
+
+  if (/^(interactive|complete)$/i.test(document.readyState)) {
+    trigger();
+  } else {
+    document.addEventListener("DOMContentLoaded", trigger);
+  }
+}
+
 var config = {
   apiKey: "AIzaSyDP637DPuIeUoGHXtNdZsl5cnEf7IzWaS0",
   authDomain: "gamaleads-899c1.firebaseapp.com",
@@ -8,56 +39,62 @@ var config = {
 };
 
 firebase.initializeApp(config);
-// Reference to your entire Firebase database
-var dbase = firebase.database().ref();
 
-// Listen for form submit
-document.getElementById('contactForm').addEventListener('submit', submitForm);
+getIp(function(ip) {
+  var userip = ip;
 
-<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+  // Reference to your entire Firebase database
+  var dbase = firebase.database().ref();
 
-$(getIP() {
- $.getJSON("https://api.ipify.org?format=jsonp&callback=?",getIP(json) {
-   return(json.ip); } ); });
+  // Listen for form submit
+  document.getElementById('contactForm').addEventListener('submit', submitForm);
 
-// Submit form
-function submitForm(e){
-  e.preventDefault();
+  // Submit form
+  function submitForm(e){
+    e.preventDefault();
 
-  // Get values
-  var name = getInputVal('name');
-  var email = getInputVal('email');
-  var ip = getIP();
-  var time = moment().format("YYYY-MM-DD hh:mm:ss");
+    // Get values
+    var name = getInputVal('name');
+    var email = getInputVal('email');
 
-  // Save message
-  saveContact(name, email, ip, time);
+    var currentdate = new Date();
+    var datetime = currentdate.getFullYear() + "-"
+                    + (currentdate.getMonth()+1)  + "-"
+                    + currentdate.getDate() + " "
+                    + currentdate.getHours() + ":"
+                    + currentdate.getMinutes() + ":"
+                    + currentdate.getSeconds();
 
-  // Show alert
-  document.querySelector('.alert').style.display = 'block';
+    // Save message
+    saveContact(email, name, userip, datetime);
 
-  // Hide alert after 3 seconds
-  setTimeout(function(){
-    document.querySelector('.alert').style.display = 'none';
-  },3000);
+    // Show alert
+    document.querySelector('.alert').style.display = 'block';
 
-  // Clear form
-  document.getElementById('contactForm').reset();
-}
+    // Hide alert after 3 seconds
+    setTimeout(function(){
+      document.querySelector('.alert').style.display = 'none';
+    },3000);
 
-// Function to get get form values
-function getInputVal(id){
-  return document.getElementById(id).value;
-}
+    // Clear form
+    document.getElementById('contactForm').reset();
+  }
 
-// Save message to firebase
-function saveContact(name, email, ip, time){
-  var newlead = dbase.push();
-  newlead.set({
-    name: name,
-    email:email,
-    ip: ip,
-    tipo: "B2C",
-    data_hora: time
-  });
-}
+  // Function to get get form values
+  function getInputVal(id){
+    return document.getElementById(id).value;
+  }
+
+  // Save message to firebase
+  function saveContact(email, name, userip, datetime){
+    var newlead = dbase.push();
+    newlead.set({
+      email:email,
+      name: name,
+      ip: userip,
+      tipo: "B2C",
+      data_hora: datetime
+    });
+  }
+
+});

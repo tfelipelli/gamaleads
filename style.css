@@ -1,15 +1,71 @@
 body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f1f1f1;
+  background: rgb(245,245,245);
+  line-height:1.6;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  padding:1em;
 }
 
 *{
   box-sizing: border-box;
 }
 
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em;
+}
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select {
+    width: inherit;
+  	height: 34px;
+  	border-radius: 4px;
+  	font-weight: normal;
+  	line-height: 33px;
+  	font-size: 18px;
+  	color: #C4C4C4;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  width: inherit;
+	height: 40px;
+	background: #008BA4;
+	border-radius: 4px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 28px;
+	font-size: 18px;
+	color: #FFFFFF;
+	padding: 8px 16px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background:#92bde7;
+    color:#fff;
+    outline:0;
+    transition: background-color 2s ease-out;
+}
+
+ul {
+  list-style: none;
+  padding:0;
+}
+
 .header {
-  padding: 30px;
+  padding:1em;
   font-size: 40px;
   text-align: center;
   background: white;
@@ -26,7 +82,7 @@ body {
 .rightcolumn {
   float: left;
   width: 25%;
-  padding-left: 20px;
+  padding-left:1em;
 }
 
 /* Add a card effect for articles */
@@ -45,54 +101,11 @@ body {
 
 /* Footer */
 .footer {
-  padding: 20px;
+  padding: 1em;
   text-align: center;
   background: #ddd;
-  margin-top: 20px;
+  margin-top: 1em;
 }
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-  max-width:1170px;
-  margin-left:auto;
-  margin-right:auto;
-  padding:1em;
-}
-
-ul {
-  list-style: none;
-  padding:0;
-}
-
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
@@ -105,70 +118,6 @@ ul {
 .responsive {
     max-width: 100%;
     height: auto;
-}
-
-.brand span {
-  color:#fff;
-}
-
-.wrapper{
-  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
-}
-
-.wrapper > *{
-  padding: 1em;
-}
-
-
-.company-info{
-  background:#c9e6ff;
-}
-
-.company-info h3, .company-info ul{
-  text-align: center;
-  margin:0 0 1rem 0;
-}
-
-.contact {
-  background:#f9feff;
-}
-
-/* FORM STYLES */
-.contact form{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap:20px;
-}
-
-.contact form label {
-  display:block;
-}
-
-.contact form p {
-  margin:0;
-}
-
-.contact form .full {
-  grid-column: 1 / 3;
-}
-
-.contact form button, .contact form input, .contact form textarea{
-  width:100%;
-  padding:1em;
-  border:1px solid #c9e6ff;
-}
-
-.contact form button{
-  background:#c9e6ff;
-  border:0;
-  text-transform: uppercase;
-}
-
-.contact form button:hover,.contact form button:focus{
-  background:#92bde7;
-  color:#fff;
-  outline:0;
-  transition: background-color 2s ease-out;
 }
 
 .alert{

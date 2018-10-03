@@ -2,6 +2,17 @@
 <html lang="en">
 <head>
   <title>econtAgil</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126833437-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126833437-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -76,7 +87,7 @@
             para poder tomar as decisões de negócios corretas e que tragam maior retorno.
             <br>
             Para estabelecer esse controle, o primeiro passo é separar totalmente o que é dinheiro pessoal
-            do que é dinheiro do negócio. Em seguida, deve-se criar um <b>fluxo de caixa</b>. 
+            do que é dinheiro do negócio. Em seguida, deve-se criar um <b>fluxo de caixa</b>.
             <br>
             Mas você pode estar se perguntando, o que é um fluxo de caixa? É a movimentação de entrada e saída de dinheiro do caixa da empresa, ou seja,
             o registro da entrada de receita e das despesas da pessoa jurídica. O empreendedor deve fazer de forma
@@ -220,7 +231,7 @@
             feitas em duplicidade e a otimizar o tempo.
           </p>
         </div>
-        
+
         <div class="card">
           <h2>Tributos – Como utiliza-los para diminuir impostos</h2>
           <h5>por Rogerio Tadeu</h5>
@@ -232,53 +243,57 @@
             Cada um desses modelos tem uma aplicação diferente, e para escolher qual é o melhor deve-se levar em conta as particularidade da empresa.<br>
            <br>
             Aqui está uma forma simples de você entender qual o melhor modelo tributário para sua empresa.<br>
-            
+
             <b>Modelo de Lucro Real:</b> Modelo que se aplica muito bem em empresas com margem de lucro muito pequena.
             Assim, se as margens de lucro bruto e líquido de uma empresa forem muito pequenas, o Lucro real é a melhor opção de enquadramento tributario.<br>
             <br>
-           <b>Modelo de Lucro Presumido:</b> Ao contrario do Lucro Real, quanto maior for a margem de lucro bruto 
+           <b>Modelo de Lucro Presumido:</b> Ao contrario do Lucro Real, quanto maior for a margem de lucro bruto
             e líquido da empresa, o Lucro Presumido torna-se a melhor opção.<br>
             <br>
-            <b>Modelo de Simples Nacional:</b> Podem enquadrar-se nesse regime tributário as empresas que faturam até R$ 4.800.000,00 ao ano. 
+            <b>Modelo de Simples Nacional:</b> Podem enquadrar-se nesse regime tributário as empresas que faturam até R$ 4.800.000,00 ao ano.
             A medida que cresce o seu faturamento mensal, a alíquota do simples também cresce gradativamente.<br>
             <br>
-            <b>Dica:</b> As empresas que estiverem utilizando o enquadramento do simples nacional, 
-            devem sempre ficar atentos ao faturamento da empresa, pois caso ela ultrapasse 
+            <b>Dica:</b> As empresas que estiverem utilizando o enquadramento do simples nacional,
+            devem sempre ficar atentos ao faturamento da empresa, pois caso ela ultrapasse
             o teto de fatuamento anual, a mesma irá automaticamente desenquadrar-se do simples nacionl.<br>
             <br>
             No início do ano, cada empresa pode escolher qual modelo tributário quer seguir, esse que será o mesmo para o período inteiro.
-            Caso a empresa queira aderir a um novo modelo de 
+            Caso a empresa queira aderir a um novo modelo de
             enquadramento isso só poderá ser feito no próximo ano.
-            
+
            </p>
-        </div> 
-        
-        
-        
-        
-        
+        </div>
+
+
+
+
+
       </div>
 
       <div class="rightcolumn">
 
-          <div class="container">
-            <div class="wrapper">
-              <div class="contact">
-                <div class="alert">Você receberá o material em breve!</div>
-                <form id="contactForm">
-                  <p>
-                    <input type="text" name="name" id="name" placeholder="Seu nome completo" required>
-                  </p>
-                  <p>
-                    <input type="email" name="email" id="email" placeholder="Seu melhor e-mail" required>
-                  </p>
-                  <p class="full">
-                    <button type="submit">Baixar material</button>
-                  </p>
-                </form>
+            <div class="container">
+              <div class="wrapper">
+                <div class="contact">
+                  <div class="alert">Você receberá nosso material em breve!</div>
+                  <form id="contactForm">
+                    <p>
+                      <input type="text" name="name" id="name" placeholder=" Seu nome completo" required>
+                    </p>
+                    <br><br>
+                    <p>
+                      <input type="text" name="email" id="email" placeholder=" Seu melhor e-mail" required>
+                      <input type="hidden" name="ip" id="ip">
+                    </p>
+                    <br><br>
+                    <p class="full">
+                      <button type="submit">Baixar material</button>
+                    </p>
+                  </form>
+                </div>
               </div>
             </div>
-          </div>
+
 
         <div class="card">
           <h3>Você sabe o que é contabilidade digital?</h3>
@@ -309,19 +324,9 @@
       <h2>Footer</h2>
     </div>
 
+    <script type="text/javascript"> var myip; </script>
+    <script id="IPscript" type="text/javascript" src="https://www.l2.io/ip.js?var=myip" AttributeIP = myip></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
-    <script>
-    // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyDP637DPuIeUoGHXtNdZsl5cnEf7IzWaS0",
-        authDomain: "gamaleads-899c1.firebaseapp.com",
-        databaseURL: "https://gamaleads-899c1.firebaseio.com",
-        projectId: "gamaleads-899c1",
-        storageBucket: "gamaleads-899c1.appspot.com",
-        messagingSenderId: "456553398482"
-      };
-      firebase.initializeApp(config);
-    </script>
     <script src="application.js"></script>
 </body>
 </html>
