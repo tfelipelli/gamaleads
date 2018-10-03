@@ -9,14 +9,55 @@ var config = {
 
 firebase.initializeApp(config);
 // Reference to your entire Firebase database
-var myFirebase = firebase.database().ref();
+var dbase = firebase.database().ref();
 
-var leads = myFirebase.child("leads");
+// Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
 
-leads.push({
-    "email": "tfelipelli@gmail.com",
-    "nome": "thais felipelli",
-    "ip": "192.168.15.13"
-    "tipo": "B2C"
-    "data_hora": "2018-10-02 18:24:14"
-});
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+$(getIP() {
+ $.getJSON("https://api.ipify.org?format=jsonp&callback=?",getIP(json) {
+   return(json.ip); } ); });
+
+// Submit form
+function submitForm(e){
+  e.preventDefault();
+
+  // Get values
+  var name = getInputVal('name');
+  var email = getInputVal('email');
+  var ip = getIP();
+  var time = moment().format("YYYY-MM-DD hh:mm:ss");
+
+  // Save message
+  saveContact(name, email, ip, time);
+
+  // Show alert
+  document.querySelector('.alert').style.display = 'block';
+
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+  },3000);
+
+  // Clear form
+  document.getElementById('contactForm').reset();
+}
+
+// Function to get get form values
+function getInputVal(id){
+  return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveContact(name, email, ip, time){
+  var newlead = dbase.push();
+  newlead.set({
+    name: name,
+    email:email,
+    ip: ip,
+    tipo: "B2C",
+    data_hora: time
+  });
+}
