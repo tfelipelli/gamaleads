@@ -43,20 +43,40 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
 
 </head>
 
 <body>
-    <div class="header">
-      <h2>Como Gerenciar sua Empresa</h2>
+  <div id="banner">
+    <img src="images/logoazul.png" alt="logo" style="float:left;width:215px;height:65px;"/>
+    <br><br><br>
+    <h1 id="top">Organize seu Fluxo de Caixa</h1>
+    <p>Conhecer o fluxo de caixa é essencial para tomar decisões.<br>
+      Por isso desenvolvemos uma planilha de controle financeiro<br>voltado para MEI.
+      Com ela você pode calcular a rentabilidade<br>e estruturar os resultados do seu negócio.
+    </p>
+
+    <div class="contact">
+      <div class="alert">Você receberá nosso material em breve!</div>
+      <form id="contactForm">
+        <p>
+          <input type="text" name="name" id="name" placeholder=" Seu nome completo" required>
+        </p>
+        <p>
+          <input type="text" name="email" id="email" placeholder=" Seu melhor e-mail" required>
+          <input type="hidden" name="ip" id="ip">
+        </p>
+        <p class="full">
+          <button type="submit">Receba nosso material</button>
+        </p>
+      </form>
     </div>
 
+  </div>
+
+  <div class="container">
     <div class="row">
       <div class="leftcolumn">
 
@@ -300,27 +320,6 @@
 
       <div class="rightcolumn">
 
-            <div class="container">
-              <div class="wrapper">
-                <div class="contact">
-                  <div class="alert">Você receberá nosso material em breve!</div>
-                  <form id="contactForm">
-                    <p>
-                      <input type="text" name="name" id="name" placeholder=" Seu nome completo" required>
-                    </p>
-                    <p>
-                      <input type="text" name="email" id="email" placeholder=" Seu melhor e-mail" required>
-                      <input type="hidden" name="ip" id="ip">
-                    </p>
-                    <p class="full">
-                      <button type="submit" class="btn btn-info btn-md btn-block">Receba nosso material</button>
-                    </p>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-
         <div class="card">
           <h3>Você sabe o que é contabilidade digital?</h3>
           <h5>por Tamires Martins</h5>
@@ -345,14 +344,11 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="footer">
-      <h2>Footer</h2>
-    </div>
-
-    <script type="text/javascript"> var myip; </script>
-    <script id="IPscript" type="text/javascript" src="https://www.l2.io/ip.js?var=myip" AttributeIP = myip></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
-    <script src="application.js"></script>
+  <script type="text/javascript"> var myip; </script>
+  <script id="IPscript" type="text/javascript" src="https://www.l2.io/ip.js?var=myip" AttributeIP = myip></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+  <script src="application.js"></script>
 </body>
 </html>
