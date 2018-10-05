@@ -193,12 +193,7 @@ button[type=submit]:hover {
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
-}
-
-.img {
-    width: 100%;
-    padding: 20px;
+    background: #000F43;
 }
 
 
