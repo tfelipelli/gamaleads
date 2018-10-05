@@ -98,6 +98,14 @@ body {
     background-color: transparent;
 }
 
+#contact p {
+    font-weight: normal;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000F43;
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 /* FORM STYLES */
 
