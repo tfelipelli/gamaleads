@@ -64,7 +64,7 @@ body {
 #banner {
     display: flex;
     flex-wrap: wrap;
-    text-align: justify;
+    text-align: left;
     background-image: url("images/banner.png");
     background-size: cover;
     padding: 120px;
