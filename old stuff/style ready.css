@@ -1,0 +1,137 @@
+body {
+  background: rgb(245,245,245);
+  line-height:1.6;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  padding:1em;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em;
+}
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select {
+    width: inherit;
+  	height: 34px;
+  	border-radius: 4px;
+  	font-weight: normal;
+  	line-height: 33px;
+  	font-size: 18px;
+  	color: #C4C4C4;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  width: inherit;
+	height: 40px;
+	background: #008BA4;
+	border-radius: 4px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 28px;
+	font-size: 18px;
+	color: #FFFFFF;
+	padding: 8px 16px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background:#92bde7;
+    color:#fff;
+    outline:0;
+    transition: background-color 2s ease-out;
+}
+
+ul {
+  list-style: none;
+  padding:0;
+}
+
+.header {
+  padding:1em;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left:1em;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 1em;
+  text-align: center;
+  background: #ddd;
+  margin-top: 1em;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.alert{
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
